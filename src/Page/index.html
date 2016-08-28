@@ -1,0 +1,35 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Todo list</title>
+    <!--<link href="/Style/style.scss" rel="stylesheet"></link>-->
+</head>
+<body>
+<header>
+    <h1>
+        <span>To Do List</span>
+    </h1>
+</header>
+
+<ul>
+    <li data-template="task">
+        <form method="post">
+            <input class="index" type="hidden" name="index" />
+            <input name="title" value="" />
+
+            <button name="action" value="update">
+                <span>Update</span>
+            </button>
+
+            <button name="action" value="delete">
+                <span>Delete</span>
+            </button>
+
+            <button name="action" value="check">
+                <span>Check</span>
+            </button>
+        </form>
+    </li>
+</ul>
+</body>
+</html>

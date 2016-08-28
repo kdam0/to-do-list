@@ -1,0 +1,5 @@
+{
+  "require": {
+    "brightflair/php.gt": "dev-master"
+  }
+}

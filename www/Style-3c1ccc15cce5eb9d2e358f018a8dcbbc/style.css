@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html, body {
+  height: 100%; }
+
+html {
+  background: #f4f4f4;
+  font-size: 16px; }
+
+body {
+  max-width: 30em;
+  background: #fff;
+  font-family: sans-serif; }
+  body > header h1 {
+    padding: 1em 2em;
+    font-weight: normal; }
+
+body > ul {
+  list-style-type: none; }
+  body > ul li {
+    border-bottom: 1px solid rgba(51, 51, 238, 0.1);
+    padding: 0 1rem;
+    padding-left: 2rem; }
+    body > ul li.done button[value='check']::before {
+      color: black; }
+      body > ul li.done input {
+        font-style: italic;
+        text-decoration: line-through;
+        opacity: 0.5; }
+    body > ul li:last-of-type button[value='check'], body > ul li:last-of-type button[value='delete'] {
+      visibility: hidden; }
+    body > ul li form {
+      display: flex;
+      align-items: center;
+      flex: 1; }
+      body > ul li form button {
+        display: inline-block;
+        font-size: 1em;
+        width: 1.5em;
+        height: 1.5em;
+        border: none;
+        background: transparent;
+        opacity: 0; }
+        body > ul li form button span {
+          display: none; }
+        body > ul li form button::before {
+          display: block;
+          color: #44a; }
+        body > ul li form button[value='update']::before {
+          content: "▶"; }
+        body > ul li form button[value='delete']::before {
+          content: "✖"; }
+        body > ul li form button[value='add']::before {
+          content: "⊞"; }
+        body > ul li form button[value='check'] {
+          order: -1;
+          border: 1px solid black;
+          opacity: 0.8;
+          color: transparent; }
+          body > ul li form button[value='check']::before {
+            color: transparent;
+            content: "✓"; }
+      body > ul li form input {
+        flex: 1;
+        font-size: 1.25rem;
+        border: none;
+        outline: none;
+        padding: 0.5rem 0;
+        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        border-left: 1px solid rgba(255, 0, 0, 0.25); }
+      body > ul li form:hover button {
+        opacity: 0.5; }
+      body > ul li form input:focus ~ button, body > ul li form button:focus, body > ul li form button:hover {
+        opacity: 1; }

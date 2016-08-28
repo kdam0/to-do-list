@@ -1,0 +1,6 @@
+composer.phar
+test/_Report
+test/phpunit.output*
+vendor
+*.sublime-*
+.idea/
